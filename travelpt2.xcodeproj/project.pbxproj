@@ -17,6 +17,7 @@
 		5D96E1D02AEDDD5600720FC3 /* firstPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D96E1CF2AEDDD5600720FC3 /* firstPage.swift */; };
 		5D96E1D22AEDDD6E00720FC3 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D96E1D12AEDDD6E00720FC3 /* Data.swift */; };
 		CD5E51052AEE2D2D00C0329B /* register.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD5E51042AEE2D2D00C0329B /* register.swift */; };
+		CD5E51072AEE337500C0329B /* Registry.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD5E51062AEE337500C0329B /* Registry.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,7 @@
 		5D96E1CF2AEDDD5600720FC3 /* firstPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = firstPage.swift; sourceTree = "<group>"; };
 		5D96E1D12AEDDD6E00720FC3 /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
 		CD5E51042AEE2D2D00C0329B /* register.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = register.swift; sourceTree = "<group>"; };
+		CD5E51062AEE337500C0329B /* Registry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Registry.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +66,7 @@
 			isa = PBXGroup;
 			children = (
 				5D96E1B62AEDD36600720FC3 /* travelpt2App.swift */,
+				CD5E51062AEE337500C0329B /* Registry.swift */,
 				5D96E1B82AEDD36600720FC3 /* ContentView.swift */,
 				5D96E1D12AEDDD6E00720FC3 /* Data.swift */,
 				5D96E1CF2AEDDD5600720FC3 /* firstPage.swift */,
@@ -157,6 +160,7 @@
 			files = (
 				5D96E1D22AEDDD6E00720FC3 /* Data.swift in Sources */,
 				5D96E1C02AEDD36700720FC3 /* Persistence.swift in Sources */,
+				CD5E51072AEE337500C0329B /* Registry.swift in Sources */,
 				CD5E51052AEE2D2D00C0329B /* register.swift in Sources */,
 				5D96E1CE2AEDDD3C00720FC3 /* secPage.swift in Sources */,
 				5D96E1B92AEDD36600720FC3 /* ContentView.swift in Sources */,

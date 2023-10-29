@@ -3,7 +3,6 @@ import SwiftUI
 struct firstPage: View {
     @State private var name: String = ""
     @State private var pass: String = ""
-    let registry = Registry()
     @State private var isShowingAlert = false
 
     var body: some View {
@@ -33,6 +32,9 @@ struct firstPage: View {
                     .listRowSeparator(.hidden)
 
                 Button(action: {
+                    print("here")
+                    print(registry.printRegistered())
+                    print(registry.checkRegistered(nameInput: name, passInput: pass))
                     if registry.checkRegistered(nameInput: name, passInput: pass) {
                         print("Login!")
                     } else {

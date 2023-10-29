@@ -38,7 +38,7 @@ struct registerPage: View {
                     print(registry.printRegistered())
 
                 }, label: {
-                    Text("Login!")
+                    Text("Register!")
                 })
                 .padding()
                 .frame(maxWidth: .infinity)

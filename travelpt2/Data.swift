@@ -49,28 +49,6 @@ struct dataList {
     ]
 }
 
-class Registry {
-  var peopleRegistered: [Person] = []
-  init() {}
-  func addUser(_ person: Person) {
-    peopleRegistered.append(person)
-  }
-  func checkRegistered(nameInput: String, passInput: String) -> Bool {
-    for person in peopleRegistered {
-      if person.getName() == nameInput && person.getPass() == passInput {
-        return true
-      }
-    }
-    return false
-  }
-    func printRegistered() {
-        for person in peopleRegistered {
-            print(person.getName() + " " + person.getPass())
-        }
-    }
-}
-
-
 class Person {
   var name: String
   var password: String

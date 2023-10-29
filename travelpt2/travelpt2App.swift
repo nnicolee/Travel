@@ -10,7 +10,7 @@ import SwiftUI
 @main
 struct travelpt2App: App {
     let persistenceController = PersistenceController.shared
-
+    let registry = Registry()
     var body: some Scene {
         WindowGroup {
             ContentView()
