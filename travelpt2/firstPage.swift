@@ -6,72 +6,30 @@
 //
 import SwiftUI
 struct firstPage: View {
-    @State private var name : String = ""
-    @State private var date : String = ""
-    @State private var friends : String = ""
-    @State private var amount : String = ""
-    
-    
+@State private var name: String = ""
+    @State private var date: Date = Date()
+    @State private var numberOfFriends: Int = 0
+    @State private var budget: Double = 0.0
     var body: some View {
-        VStack(alignment: .leading) {
-            Text("Plan a Trip")
-                .font(.largeTitle)
-                .fontWeight(.bold)
-                .padding(.horizontal)
-                .padding(.vertical)
-            
-            Form {
-                
-                TextField("Name: ", text: $name)
-                    .padding()
-                    .background(Color(.systemGroupedBackground))
-                        .cornerRadius(15)
-                    .font(.title3)
-                    .fontWeight(.bold)
-                    .listRowSeparator(.hidden)
-                
-                TextField("Date: ", text: $date)
-                    .padding()
-                    .background(Color(.systemGroupedBackground))
-                        .cornerRadius(15)
-                    .font(.title3)
-                    .fontWeight(.bold)
-                    .listRowSeparator(.hidden)
-                
-                TextField("How many friends: ", text: $friends)
-                    .padding()
-                    .background(Color(.systemGroupedBackground))
-                        .cornerRadius(15)
-                    .font(.title3)
-                    .fontWeight(.bold)
-                    .listRowSeparator(.hidden)
-                
-                TextField("Amount: ", text: $amount)
-                    .padding()
-                    .background(Color(.systemGroupedBackground))
-                        .cornerRadius(15)
-                    .font(.title3)
-                    .fontWeight(.bold)
-                    .listRowSeparator(.hidden)
-                
-                Button(action: {
-                    DataList.datas2.insert(Data(imageName: "placeholder", name: name, date: date, friends: friends, amount: amount), at: 0)
-    
-                }, label: {
-                   Text("Create Trip")
-                })
-                .padding()
-                .frame(maxWidth: .infinity)
-                .background(Color.black.cornerRadius(10))
-                .foregroundColor(.white)
-                .font(.headline)
-                //Di sables button until all fields are filled
-                .disabled(name.isEmpty || date.isEmpty || friends.isEmpty || amount.isEmpty)
-            }
-            .scrollContentBackground(.hidden)
-        }
-    }
-}
+           NavigationView {
+               Form {
+                   Section(header: Text("Personal Information")) {
+                       TextField("Name", text: $name)
+                       DatePicker("Date", selection: $date)
+                   }
+                   Section(header: Text("Social Details")) {
+                       Stepper("Number of Friends: \(numberOfFriends)", value: $numberOfFriends, in: 0...100)
+                   }
+                   Section(header: Text("Budget")) {
+                       TextField("Budget", value: $budget, format: .currency(code: "USD"))
+                   }
+               }
+               .navigationTitle("User Details")
+               .navigationBarItems(trailing: NavigationLink("Next", destination: secPage(name: name, date: date, numberOfFriends: numberOfFriends, budget: budget)))
+           }
+       }
+   }
+
 struct firstPage_Previews: PreviewProvider {
     static var previews: some View {
         firstPage()
