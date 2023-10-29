@@ -1,6 +1,6 @@
 import SwiftUI
 
-struct firstPage: View {
+struct registerPage: View {
     @State private var name: String = ""
     @State private var pass: String = ""
     let registry = Registry()
@@ -33,12 +33,9 @@ struct firstPage: View {
                     .listRowSeparator(.hidden)
 
                 Button(action: {
-                    if registry.checkRegistered(nameInput: name, passInput: pass) {
-                        print("Login!")
-                    } else {
-                        // User is not registered, show a popup
-                        isShowingAlert = true
-                    }
+                    
+                    registry.addUser(Person(name: name, password: pass))
+                    print(registry.printRegistered())
 
                 }, label: {
                     Text("Login!")
@@ -62,7 +59,7 @@ struct firstPage: View {
     }
 }
 
-struct firstPage_Previews: PreviewProvider {
+struct register_Previews: PreviewProvider {
     static var previews: some View {
         firstPage()
     }

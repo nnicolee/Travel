@@ -36,6 +36,17 @@ struct ContentView: View {
                                     .foregroundColor(.white)
                                     .font(.headline)
                                     .cornerRadius(10)
+                        NavigationLink(destination: registerPage()) {
+                            Text("Register!")
+                            .foregroundColor(Color.white)}
+                                .font(/*@START_MENU_TOKEN@*/.title2/*@END_MENU_TOKEN@*/)
+                                .foregroundColor(Color("Color"))
+                        
+                        .padding()
+                        .background(Color(hue: 0.697, saturation: 0.785, brightness: 0.368))
+                                    .foregroundColor(.white)
+                                    .font(.headline)
+                                    .cornerRadius(10)
                         
                        
                     } .padding()

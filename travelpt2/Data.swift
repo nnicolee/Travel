@@ -49,3 +49,105 @@ struct dataList {
     ]
 }
 
+class Registry {
+  var peopleRegistered: [Person] = []
+  init() {}
+  func addUser(_ person: Person) {
+    peopleRegistered.append(person)
+  }
+  func checkRegistered(nameInput: String, passInput: String) -> Bool {
+    for person in peopleRegistered {
+      if person.getName() == nameInput && person.getPass() == passInput {
+        return true
+      }
+    }
+    return false
+  }
+    func printRegistered() {
+        for person in peopleRegistered {
+            print(person.getName() + " " + person.getPass())
+        }
+    }
+}
+
+
+class Person {
+  var name: String
+  var password: String
+    init(name: String, password: String) {
+      self.name = name
+      self.password = password
+    }
+
+  func getName() -> String {
+    return self.name
+  }
+
+  func getPass() -> String {
+    return self.password
+  }
+}
+
+class Trip {
+  var people: [Person] = []
+  var expenses: [Expense] = []
+  var events: [Event] = []
+  var name: String
+  init (name: String) {
+    self.name = name
+  }
+  func addPerson(_ person: Person) {
+      people.append(person)
+  }
+  func addExpense (_ expense: Expense) {
+    expenses.append(expense)
+  }
+  func addEvent(_ event: Event) {
+    events.append(event)
+  }
+  func getPeople() -> [Person] {
+    return self.people
+  }
+  func getExpenses() -> [Expense] {
+    return self.expenses
+  }
+  func getEvents() -> [String] {
+      return self.events.map { "\($0.getName()) at \($0.getTime())" }
+  }
+
+}
+
+class Expense {
+  var name: String
+  var cost: Int
+
+  init(name: String, cost: Int) {
+    self.name = name
+    self.cost = cost
+  }
+
+  func getName() -> String {
+    return self.name
+  }
+
+  func getCost() -> Int {
+    return self.cost
+  }
+}
+
+
+class Event {
+  var name: String
+  var time: String
+  public var description: String { return "\(name)" }
+  init(name: String, time: String) {
+    self.name = name
+    self.time = time
+  }
+  func getName() -> String {
+    return self.name
+  }
+  func getTime() -> String {
+    return self.time
+  }
+}
