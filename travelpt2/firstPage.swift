@@ -7,14 +7,16 @@
 import SwiftUI
 struct firstPage: View {
 @State private var name: String = ""
+    @State private var location: String = ""
     @State private var date: Date = Date()
     @State private var numberOfFriends: Int = 0
     @State private var budget: Double = 0.0
     var body: some View {
            NavigationView {
                Form {
-                   Section(header: Text("Personal Information")) {
+                   Section(header: Text("Trip Information")) {
                        TextField("Name", text: $name)
+                       TextField("Destination📍" ,text:$location)
                        DatePicker("Date", selection: $date)
                    }
                    Section(header: Text("Social Details")) {
@@ -24,7 +26,7 @@ struct firstPage: View {
                        TextField("Budget", value: $budget, format: .currency(code: "USD"))
                    }
                }
-               .navigationTitle("User Details")
+               .navigationTitle("Plan Your Trip!")
                .navigationBarItems(trailing: NavigationLink("Next", destination: secPage(name: name, date: date, numberOfFriends: numberOfFriends, budget: budget)))
            }
        }
