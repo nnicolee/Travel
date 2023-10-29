@@ -18,6 +18,10 @@
 		5D96E1D22AEDDD6E00720FC3 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D96E1D12AEDDD6E00720FC3 /* Data.swift */; };
 		CD5E51052AEE2D2D00C0329B /* register.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD5E51042AEE2D2D00C0329B /* register.swift */; };
 		CD5E51072AEE337500C0329B /* Registry.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD5E51062AEE337500C0329B /* Registry.swift */; };
+		CD5E51092AEE384300C0329B /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD5E51082AEE384300C0329B /* Person.swift */; };
+		CD5E510B2AEE386700C0329B /* Trip.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD5E510A2AEE386700C0329B /* Trip.swift */; };
+		CD5E510D2AEE387800C0329B /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD5E510C2AEE387800C0329B /* Event.swift */; };
+		CD5E510F2AEE389300C0329B /* Expense.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD5E510E2AEE389300C0329B /* Expense.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +37,10 @@
 		5D96E1D12AEDDD6E00720FC3 /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
 		CD5E51042AEE2D2D00C0329B /* register.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = register.swift; sourceTree = "<group>"; };
 		CD5E51062AEE337500C0329B /* Registry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Registry.swift; sourceTree = "<group>"; };
+		CD5E51082AEE384300C0329B /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		CD5E510A2AEE386700C0329B /* Trip.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Trip.swift; sourceTree = "<group>"; };
+		CD5E510C2AEE387800C0329B /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
+		CD5E510E2AEE389300C0329B /* Expense.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Expense.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,8 +82,12 @@
 				5D96E1BA2AEDD36700720FC3 /* Assets.xcassets */,
 				5D96E1BF2AEDD36700720FC3 /* Persistence.swift */,
 				5D96E1C12AEDD36700720FC3 /* travelpt2.xcdatamodeld */,
+				CD5E510A2AEE386700C0329B /* Trip.swift */,
 				CD5E51042AEE2D2D00C0329B /* register.swift */,
 				5D96E1BC2AEDD36700720FC3 /* Preview Content */,
+				CD5E51082AEE384300C0329B /* Person.swift */,
+				CD5E510C2AEE387800C0329B /* Event.swift */,
+				CD5E510E2AEE389300C0329B /* Expense.swift */,
 			);
 			path = travelpt2;
 			sourceTree = "<group>";
@@ -158,14 +170,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CD5E510B2AEE386700C0329B /* Trip.swift in Sources */,
+				CD5E51092AEE384300C0329B /* Person.swift in Sources */,
 				5D96E1D22AEDDD6E00720FC3 /* Data.swift in Sources */,
 				5D96E1C02AEDD36700720FC3 /* Persistence.swift in Sources */,
+				CD5E510D2AEE387800C0329B /* Event.swift in Sources */,
 				CD5E51072AEE337500C0329B /* Registry.swift in Sources */,
 				CD5E51052AEE2D2D00C0329B /* register.swift in Sources */,
 				5D96E1CE2AEDDD3C00720FC3 /* secPage.swift in Sources */,
 				5D96E1B92AEDD36600720FC3 /* ContentView.swift in Sources */,
 				5D96E1C32AEDD36700720FC3 /* travelpt2.xcdatamodeld in Sources */,
 				5D96E1B72AEDD36600720FC3 /* travelpt2App.swift in Sources */,
+				CD5E510F2AEE389300C0329B /* Expense.swift in Sources */,
 				5D96E1D02AEDDD5600720FC3 /* firstPage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -4,7 +4,7 @@ struct firstPage: View {
     @State private var name: String = ""
     @State private var pass: String = ""
     @State private var isShowingAlert = false
-
+    let registry = Registry()
     var body: some View {
         VStack(alignment: .leading) {
             Text("Login")
@@ -33,7 +33,6 @@ struct firstPage: View {
 
                 Button(action: {
                     print("here")
-                    print(registry.printRegistered())
                     print(registry.checkRegistered(nameInput: name, passInput: pass))
                     if registry.checkRegistered(nameInput: name, passInput: pass) {
                         print("Login!")
