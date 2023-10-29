@@ -9,7 +9,7 @@ import SwiftUI
 
 struct IndivPlan: View {
     var datas: [Data] = DataList.datas2
-    var newdatas: [Data] = DataList.datas
+    var newdatas: [Data] = DataList.datas2
     
 
     var body: some View {
@@ -58,7 +58,7 @@ struct IndivPlan: View {
                         
                         Spacer()
 
-                        Text("Announcments")
+                        Text("Bucket list")
                             .font(.title)
                             .fontWeight(.semibold)
                         
