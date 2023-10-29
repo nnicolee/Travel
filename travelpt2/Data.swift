@@ -33,7 +33,7 @@ struct dataList {
     static var datas2 = [
         Data(imageName: "placeholder",
              name: "Joe",
-             location: "hawai",
+             location: "hawaii",
              friends: "3",
              budget: "$400"),
         Data(imageName: "placeholder",

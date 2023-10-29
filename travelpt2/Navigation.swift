@@ -35,7 +35,7 @@ struct Navigation: View {
                         bucketList()
                     }
                     if selectedTab == .clipboard {
-                        IndivPlan()
+                        receipt()
                     }
                 }
             }

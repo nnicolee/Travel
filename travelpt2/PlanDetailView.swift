@@ -31,7 +31,7 @@ struct PlanDetailView: View {
                     Divider()
                     
                     VStack(alignment: .leading, spacing: 8){
-                        Text("Contact")
+                        Text("Location")
                             .font(.title)
                             .fontWeight(.semibold)
                         
@@ -39,7 +39,7 @@ struct PlanDetailView: View {
                         
                         Spacer()
                         
-                        Text("About")
+                        Text("Friends")
                             .font(.title)
                             .fontWeight(.semibold)
                         
