@@ -38,8 +38,11 @@ struct firstPage: View {
                    }
                }
                .navigationTitle("Plan Your Trip!")
-               .navigationBarItems(trailing: NavigationLink("Next", destination: secPage(name: name, date: date, numberOfFriends: numberOfFriends, budget: budget))
-           )
+               NavigationLink(destination: secPage()) { Text("Click Here")
+                   
+               }
+//               .navigationBarItems(trailing: NavigationLink("Next", destination: secPage(name: name, date: date, numberOfFriends: numberOfFriends, budget: budget))
+//           )
             
                
            }
