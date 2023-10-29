@@ -8,7 +8,6 @@ import SwiftUI
 struct Data: Identifiable {
     let id = UUID()
     let imageName: String
-    let type: String
     let name: String
     let date: String
     let friends: String
@@ -24,8 +23,8 @@ struct DataList: Identifiable{
         return datas
     }
     
-    func addData(imageName: String, type: String, name: String, date: String, friends: String, amount: String) {
-        let newData = Data(imageName:"uwu", type: type, name: name, date: date, friends: friends, amount: amount)
+    func addData(imageName: String, name: String, date: String, friends: String, amount: String) {
+        let newData = Data(imageName:"uwu", name: name, date: date, friends: friends, amount: amount)
         self.datas.append(newData)
     }
 }
@@ -33,19 +32,16 @@ struct DataList: Identifiable{
 struct dataList {
     static var datas = [
         Data(imageName: "placeholder",
-             type: "cash",
              name: "Joe",
              date: "December 12-23",
              friends: "3",
              amount: "$400"),
         Data(imageName: "placeholder",
-             type: "cash",
              name: "Joe",
              date: "December 12-23",
              friends: "3",
              amount: "$400"),
         Data(imageName: "placeholder",
-            type: "cash",
             name: "Joe",
             date: "December 12-23",
             friends: "3",

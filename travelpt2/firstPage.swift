@@ -6,8 +6,6 @@
 //
 import SwiftUI
 struct firstPage: View {
-
-    @State private var type : String = ""
     @State private var name : String = ""
     @State private var date : String = ""
     @State private var friends : String = ""
@@ -23,13 +21,6 @@ struct firstPage: View {
                 .padding(.vertical)
             
             Form {
-                TextField("Payment Method: ", text: $type)
-                    .padding()
-                    .background(Color(.systemGroupedBackground))
-                        .cornerRadius(15)
-                    .font(.title3)
-                    .fontWeight(.bold)
-                    .listRowSeparator(.hidden)
                 
                 TextField("Name: ", text: $name)
                     .padding()
@@ -64,10 +55,10 @@ struct firstPage: View {
                     .listRowSeparator(.hidden)
                 
                 Button(action: {
-                    DataList.datas2.insert(Data(imageName: "placeholder", type: type, name: name, date: date, friends: friends, amount: amount), at: 0)
+                    DataList.datas2.insert(Data(imageName: "placeholder", name: name, date: date, friends: friends, amount: amount), at: 0)
     
                 }, label: {
-                   Text("Create Club")
+                   Text("Create Trip")
                 })
                 .padding()
                 .frame(maxWidth: .infinity)
@@ -75,7 +66,7 @@ struct firstPage: View {
                 .foregroundColor(.white)
                 .font(.headline)
                 //Di sables button until all fields are filled
-                .disabled(type.isEmpty || name.isEmpty || date.isEmpty || friends.isEmpty || amount.isEmpty)
+                .disabled(name.isEmpty || date.isEmpty || friends.isEmpty || amount.isEmpty)
             }
             .scrollContentBackground(.hidden)
         }

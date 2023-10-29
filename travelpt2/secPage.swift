@@ -29,13 +29,7 @@ struct secPage: View {
                     Divider()
                     
                     VStack(alignment: .leading, spacing: 8){
-                        Text("Payment Method")
-                            .font(.title)
-                            .fontWeight(.semibold)
-                        
-                        Text(data.type)
-                        
-                        Spacer()
+                    
                         
                         Text("Date")
                             .font(.title)
