@@ -9,9 +9,9 @@ struct Data: Identifiable {
     let id = UUID()
     let imageName: String
     let name: String
-    let date: String
+    let location: String
     let friends: String
-    let amount: String
+    let budget: String
 }
 struct DataList: Identifiable{
     let id = UUID()
@@ -23,29 +23,29 @@ struct DataList: Identifiable{
         return datas
     }
     
-    func addData(imageName: String, name: String, date: String, friends: String, amount: String) {
-        let newData = Data(imageName:"uwu", name: name, date: date, friends: friends, amount: amount)
+    func addData(imageName: String, name: String, location: String, friends: String, budget: String) {
+        let newData = Data(imageName:"uwu", name: name, location: location, friends: friends, budget: budget)
         self.datas.append(newData)
     }
 }
 //List of directory clubs to make it look realistic LOL
 struct dataList {
-    static var datas = [
+    static var datas2 = [
         Data(imageName: "placeholder",
              name: "Joe",
-             date: "December 12-23",
+             location: "hawai",
              friends: "3",
-             amount: "$400"),
+             budget: "$400"),
         Data(imageName: "placeholder",
              name: "Joe",
-             date: "December 12-23",
+             location: "Paris",
              friends: "3",
-             amount: "$400"),
+             budget: "$400"),
         Data(imageName: "placeholder",
             name: "Joe",
-            date: "December 12-23",
+             location: "London",
             friends: "3",
-            amount: "$400"),
+            budget: "$400"),
     ]
 }
 
