@@ -11,7 +11,7 @@ struct IndivPlan: View {
     var datas: [Data] = DataList.datas2
     var newdatas: [Data] = DataList.datas2
     
-
+    
     var body: some View {
         ScrollView {
             VStack {
@@ -25,17 +25,17 @@ struct IndivPlan: View {
                     VStack(alignment: .leading, spacing: 8){
                         List(datas, id:\.id) { data in
                             Text(data.name)
-                            .font(.largeTitle)
-                            .fontWeight(.bold)
+                                .font(.largeTitle)
+                                .fontWeight(.bold)
                             Text(data.location)
-                            .font(.title2)
-                            .foregroundColor(.secondary)
+                                .font(.title2)
+                                .foregroundColor(.secondary)
                             Text(data.friends)
-                            .font(.title2)
-                            .foregroundColor(.secondary)
+                                .font(.title2)
+                                .foregroundColor(.secondary)
                             Text(data.budget)
-                            .font(.title2)
-                            .foregroundColor(.secondary)
+                                .font(.title2)
+                                .foregroundColor(.secondary)
                         }
                     }
                     
@@ -45,10 +45,10 @@ struct IndivPlan: View {
                         Text("Contact")
                             .font(.title)
                             .fontWeight(.semibold)
-                                                
+                        
                         
                         Spacer()
-
+                        
                         
                         Text("Next Meeting")
                             .font(.title)
@@ -57,28 +57,29 @@ struct IndivPlan: View {
                         Text("TBD")
                         
                         Spacer()
-
-                        Text("Bucket list")
-                            .font(.title)
-                            .fontWeight(.semibold)
                         
+                        NavigationLink(destination: bucketList()) {
+                            Text("Bucket List")     .font(.title)
+                                .fontWeight(.semibold)
+                            
+                        }
                     }
+                    .frame(maxWidth: .infinity,  alignment: .leading)
+                    .padding()
+                    
                 }
-                .frame(maxWidth: .infinity,  alignment: .leading)
-                .padding()
                 
             }
-            
+            .ignoresSafeArea()
+            .background(.ultraThinMaterial)
         }
-        .ignoresSafeArea()
-        .background(.ultraThinMaterial)
     }
-}
-
-struct IndivPlan_Previews: PreviewProvider {
-    static var previews: some View {
-        IndivPlan()
+    
+    struct IndivPlan_Previews: PreviewProvider {
+        static var previews: some View {
+            IndivPlan()
+        }
     }
+    
+    // IndivPlan(plan: dataList.datas2.first())/
 }
-
-// IndivPlan(plan: dataList.datas2.first())/

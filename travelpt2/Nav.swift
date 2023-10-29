@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct Navigation: View {
+struct Nav: View {
     //Plus icon
     @State var showNewScreen: Bool = false
     
@@ -27,7 +27,7 @@ struct Navigation: View {
                         firstPage()
                     }
                     if selectedTab == .plans {
-                        //secPage() FIX THIS THERE IS JUST AN EMPTY SECPAGE
+                        secPage()
                     }
                 }
             }
@@ -62,8 +62,8 @@ struct NewScreen: View {
     }
 }
 
-struct Navigation_Previews: PreviewProvider {
+struct Nav_Previews: PreviewProvider {
     static var previews: some View {
-        Navigation()
+        Nav()
     }
 }

@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		11B4C9EA2AEE906200FE05A2 /* bucketList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11B4C9E92AEE906200FE05A2 /* bucketList.swift */; };
+		11B4C9EC2AEE9A0400FE05A2 /* PlanDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11B4C9EB2AEE9A0400FE05A2 /* PlanDetailView.swift */; };
 		5D96E1B72AEDD36600720FC3 /* travelpt2App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D96E1B62AEDD36600720FC3 /* travelpt2App.swift */; };
 		5D96E1B92AEDD36600720FC3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D96E1B82AEDD36600720FC3 /* ContentView.swift */; };
 		5D96E1BB2AEDD36700720FC3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5D96E1BA2AEDD36700720FC3 /* Assets.xcassets */; };
@@ -22,6 +24,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		11B4C9E92AEE906200FE05A2 /* bucketList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = bucketList.swift; sourceTree = "<group>"; };
+		11B4C9EB2AEE9A0400FE05A2 /* PlanDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanDetailView.swift; sourceTree = "<group>"; };
 		5D96E1B32AEDD36600720FC3 /* travelpt2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = travelpt2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5D96E1B62AEDD36600720FC3 /* travelpt2App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = travelpt2App.swift; sourceTree = "<group>"; };
 		5D96E1B82AEDD36600720FC3 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -69,12 +73,14 @@
 			children = (
 				5D96E1B62AEDD36600720FC3 /* travelpt2App.swift */,
 				B5D48BAA2AEE69B9003D4285 /* IndivPlan.swift */,
-				5D96E1B82AEDD36600720FC3 /* ContentView.swift */,
+				5D96E1CD2AEDDD3C00720FC3 /* secPage.swift */,
+				11B4C9EB2AEE9A0400FE05A2 /* PlanDetailView.swift */,
 				5D96E1D12AEDDD6E00720FC3 /* Data.swift */,
+				11B4C9E92AEE906200FE05A2 /* bucketList.swift */,
+				5D96E1B82AEDD36600720FC3 /* ContentView.swift */,
 				5D96E1CF2AEDDD5600720FC3 /* firstPage.swift */,
 				B5D48BA42AEE5DD7003D4285 /* Nav.swift */,
 				B5D48BA22AEE5D34003D4285 /* navBar.swift */,
-				5D96E1CD2AEDDD3C00720FC3 /* secPage.swift */,
 				5D96E1BA2AEDD36700720FC3 /* Assets.xcassets */,
 				5D96E1BF2AEDD36700720FC3 /* Persistence.swift */,
 				5D96E1C12AEDD36700720FC3 /* travelpt2.xcdatamodeld */,
@@ -161,9 +167,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				11B4C9EC2AEE9A0400FE05A2 /* PlanDetailView.swift in Sources */,
 				5D96E1D22AEDDD6E00720FC3 /* Data.swift in Sources */,
 				B5D48BA32AEE5D34003D4285 /* navBar.swift in Sources */,
 				5D96E1C02AEDD36700720FC3 /* Persistence.swift in Sources */,
+				11B4C9EA2AEE906200FE05A2 /* bucketList.swift in Sources */,
 				5D96E1CE2AEDDD3C00720FC3 /* secPage.swift in Sources */,
 				5D96E1B92AEDD36600720FC3 /* ContentView.swift in Sources */,
 				B5D48BA52AEE5DD7003D4285 /* Nav.swift in Sources */,
