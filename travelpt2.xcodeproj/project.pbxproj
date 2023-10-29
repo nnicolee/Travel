@@ -18,6 +18,7 @@
 		5D96E1D22AEDDD6E00720FC3 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D96E1D12AEDDD6E00720FC3 /* Data.swift */; };
 		B5D48BA32AEE5D34003D4285 /* navBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D48BA22AEE5D34003D4285 /* navBar.swift */; };
 		B5D48BA52AEE5DD7003D4285 /* Nav.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D48BA42AEE5DD7003D4285 /* Nav.swift */; };
+		B5D48BAB2AEE69B9003D4285 /* IndivPlan.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D48BAA2AEE69B9003D4285 /* IndivPlan.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +34,7 @@
 		5D96E1D12AEDDD6E00720FC3 /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
 		B5D48BA22AEE5D34003D4285 /* navBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = navBar.swift; sourceTree = "<group>"; };
 		B5D48BA42AEE5DD7003D4285 /* Nav.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Nav.swift; sourceTree = "<group>"; };
+		B5D48BAA2AEE69B9003D4285 /* IndivPlan.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndivPlan.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +68,7 @@
 			isa = PBXGroup;
 			children = (
 				5D96E1B62AEDD36600720FC3 /* travelpt2App.swift */,
+				B5D48BAA2AEE69B9003D4285 /* IndivPlan.swift */,
 				5D96E1B82AEDD36600720FC3 /* ContentView.swift */,
 				5D96E1D12AEDDD6E00720FC3 /* Data.swift */,
 				5D96E1CF2AEDDD5600720FC3 /* firstPage.swift */,
@@ -167,6 +170,7 @@
 				5D96E1C32AEDD36700720FC3 /* travelpt2.xcdatamodeld in Sources */,
 				5D96E1B72AEDD36600720FC3 /* travelpt2App.swift in Sources */,
 				5D96E1D02AEDDD5600720FC3 /* firstPage.swift in Sources */,
+				B5D48BAB2AEE69B9003D4285 /* IndivPlan.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

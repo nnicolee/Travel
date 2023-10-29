@@ -11,6 +11,7 @@ struct firstPage: View {
     @State private var location : String = ""
     @State private var friends : String = ""
     @State private var budget : String = ""
+    @State var imageName : String = ""
     
     
     var body: some View {
@@ -76,6 +77,7 @@ struct firstPage: View {
 struct firstPage_Previews: PreviewProvider {
     static var previews: some View {
         firstPage()
+        IndivPlan()
     }
 }
 

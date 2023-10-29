@@ -15,7 +15,7 @@ struct Data: Identifiable {
 }
 struct DataList: Identifiable{
     let id = UUID()
-    @State private var datas: [Data] = []
+    @State public var datas: [Data] = []
     static var datas2: [Data] = []
     
     
