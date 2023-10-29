@@ -11,6 +11,8 @@ struct firstPage: View {
     @State private var date: Date = Date()
     @State private var numberOfFriends: Int = 0
     @State private var budget: Double = 0.0
+    let destinations = ["Paris", "New York", "Tokyo", "London", "Rome", "Sydney", "Barcelona", "Dubai", "Rio de Janeiro"]
+    @State private var randomDestination: String = ""
     var body: some View {
            NavigationView {
                Form {
@@ -25,15 +27,27 @@ struct firstPage: View {
                    Section(header: Text("Budget")) {
                        TextField("Budget", value: $budget, format: .currency(code: "USD"))
                    }
+                   Section(header: Text("Random Destination")) {
+                       Text("Destination: \(randomDestination)")
+                       Button("Generate Random Destination") {
+                           // Generate a random destination
+                           if let randomDestination = destinations.randomElement() {
+                               self.randomDestination = randomDestination
+                           }
+                       }
+                   }
                }
                .navigationTitle("Plan Your Trip!")
-               .navigationBarItems(trailing: NavigationLink("Next", destination: secPage(name: name, date: date, numberOfFriends: numberOfFriends, budget: budget)))
+               .navigationBarItems(trailing: NavigationLink("Next", destination: secPage(name: name, date: date, numberOfFriends: numberOfFriends, budget: budget))
+           )
+            
+               
            }
        }
    }
 
-struct firstPage_Previews: PreviewProvider {
-    static var previews: some View {
-        firstPage()
-    }
-}
+   struct firstPage_Previews: PreviewProvider {
+       static var previews: some View {
+           firstPage()
+       }
+   }
