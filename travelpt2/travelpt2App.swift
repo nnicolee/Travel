@@ -13,7 +13,7 @@ struct travelpt2App: App {
 
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            Navigation()
                 .environment(\.managedObjectContext, persistenceController.container.viewContext)
         }
     }
