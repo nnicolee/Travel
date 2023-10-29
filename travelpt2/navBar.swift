@@ -7,12 +7,46 @@
 
 import SwiftUI
 
-struct navBar: View {
+enum Tab: String, CaseIterable {
+    case homePage
+    case plans
+    }
+
+struct newNavbar: View {
+    
+    @Binding var selectedTab: Tab
+    private var fillImage: String {
+        selectedTab.rawValue + ""
+    }
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack {
+            HStack {
+                ForEach(Tab.allCases, id: \.rawValue) { tab in
+                    Spacer()
+                    Image(systemName: selectedTab == tab ? fillImage : tab.rawValue)
+                        .scaleEffect(selectedTab == tab ? 1.25 : 1.0)
+                        .foregroundColor(selectedTab == tab ? .black : .gray)
+                        .font(.system(size: 22))
+                        .fontWeight(.semibold)
+                        .onTapGesture {
+                            withAnimation(.easeIn(duration: 0.1)) {
+                                selectedTab = tab
+                            }
+                        }
+                    Spacer()
+                }
+            }
+            .frame(width: nil, height: 60)
+            .background(.thinMaterial)
+            .cornerRadius(10)
+            .padding()
+        }
     }
 }
 
-#Preview {
-    navBar()
+struct newNavbar_Previews: PreviewProvider {
+    static var previews: some View {
+        newNavbar(selectedTab: .constant(.plans))
+    }
 }

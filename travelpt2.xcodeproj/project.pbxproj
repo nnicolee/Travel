@@ -16,6 +16,8 @@
 		5D96E1CE2AEDDD3C00720FC3 /* secPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D96E1CD2AEDDD3C00720FC3 /* secPage.swift */; };
 		5D96E1D02AEDDD5600720FC3 /* firstPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D96E1CF2AEDDD5600720FC3 /* firstPage.swift */; };
 		5D96E1D22AEDDD6E00720FC3 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D96E1D12AEDDD6E00720FC3 /* Data.swift */; };
+		B5D48BA32AEE5D34003D4285 /* navBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D48BA22AEE5D34003D4285 /* navBar.swift */; };
+		B5D48BA52AEE5DD7003D4285 /* Nav.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D48BA42AEE5DD7003D4285 /* Nav.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +31,8 @@
 		5D96E1CD2AEDDD3C00720FC3 /* secPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = secPage.swift; sourceTree = "<group>"; };
 		5D96E1CF2AEDDD5600720FC3 /* firstPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = firstPage.swift; sourceTree = "<group>"; };
 		5D96E1D12AEDDD6E00720FC3 /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
+		B5D48BA22AEE5D34003D4285 /* navBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = navBar.swift; sourceTree = "<group>"; };
+		B5D48BA42AEE5DD7003D4285 /* Nav.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Nav.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,7 +68,9 @@
 				5D96E1B62AEDD36600720FC3 /* travelpt2App.swift */,
 				5D96E1B82AEDD36600720FC3 /* ContentView.swift */,
 				5D96E1D12AEDDD6E00720FC3 /* Data.swift */,
+				B5D48BA42AEE5DD7003D4285 /* Nav.swift */,
 				5D96E1CF2AEDDD5600720FC3 /* firstPage.swift */,
+				B5D48BA22AEE5D34003D4285 /* navBar.swift */,
 				5D96E1CD2AEDDD3C00720FC3 /* secPage.swift */,
 				5D96E1BA2AEDD36700720FC3 /* Assets.xcassets */,
 				5D96E1BF2AEDD36700720FC3 /* Persistence.swift */,
@@ -153,9 +159,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				5D96E1D22AEDDD6E00720FC3 /* Data.swift in Sources */,
+				B5D48BA32AEE5D34003D4285 /* navBar.swift in Sources */,
 				5D96E1C02AEDD36700720FC3 /* Persistence.swift in Sources */,
 				5D96E1CE2AEDDD3C00720FC3 /* secPage.swift in Sources */,
 				5D96E1B92AEDD36600720FC3 /* ContentView.swift in Sources */,
+				B5D48BA52AEE5DD7003D4285 /* Nav.swift in Sources */,
 				5D96E1C32AEDD36700720FC3 /* travelpt2.xcdatamodeld in Sources */,
 				5D96E1B72AEDD36600720FC3 /* travelpt2App.swift in Sources */,
 				5D96E1D02AEDDD5600720FC3 /* firstPage.swift in Sources */,
