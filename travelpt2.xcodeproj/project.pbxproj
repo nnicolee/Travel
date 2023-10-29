@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		1152FAE02AEEA4BA002A2043 /* newNavBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1152FADF2AEEA4BA002A2043 /* newNavBar.swift */; };
 		1152FAE22AEEA4DD002A2043 /* Navigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1152FAE12AEEA4DD002A2043 /* Navigation.swift */; };
+		1152FAE82AEEA790002A2043 /* receipt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1152FAE72AEEA790002A2043 /* receipt.swift */; };
 		11B4C9EA2AEE906200FE05A2 /* bucketList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11B4C9E92AEE906200FE05A2 /* bucketList.swift */; };
 		11B4C9EC2AEE9A0400FE05A2 /* PlanDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11B4C9EB2AEE9A0400FE05A2 /* PlanDetailView.swift */; };
 		5D96E1B72AEDD36600720FC3 /* travelpt2App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D96E1B62AEDD36600720FC3 /* travelpt2App.swift */; };
@@ -26,6 +27,7 @@
 /* Begin PBXFileReference section */
 		1152FADF2AEEA4BA002A2043 /* newNavBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = newNavBar.swift; sourceTree = "<group>"; };
 		1152FAE12AEEA4DD002A2043 /* Navigation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Navigation.swift; sourceTree = "<group>"; };
+		1152FAE72AEEA790002A2043 /* receipt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = receipt.swift; sourceTree = "<group>"; };
 		11B4C9E92AEE906200FE05A2 /* bucketList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = bucketList.swift; sourceTree = "<group>"; };
 		11B4C9EB2AEE9A0400FE05A2 /* PlanDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanDetailView.swift; sourceTree = "<group>"; };
 		5D96E1B32AEDD36600720FC3 /* travelpt2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = travelpt2.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -81,6 +83,7 @@
 				5D96E1CF2AEDDD5600720FC3 /* firstPage.swift */,
 				1152FADF2AEEA4BA002A2043 /* newNavBar.swift */,
 				1152FAE12AEEA4DD002A2043 /* Navigation.swift */,
+				1152FAE72AEEA790002A2043 /* receipt.swift */,
 				5D96E1BA2AEDD36700720FC3 /* Assets.xcassets */,
 				5D96E1BF2AEDD36700720FC3 /* Persistence.swift */,
 				5D96E1C12AEDD36700720FC3 /* travelpt2.xcdatamodeld */,
@@ -173,6 +176,7 @@
 				1152FAE22AEEA4DD002A2043 /* Navigation.swift in Sources */,
 				5D96E1C02AEDD36700720FC3 /* Persistence.swift in Sources */,
 				11B4C9EA2AEE906200FE05A2 /* bucketList.swift in Sources */,
+				1152FAE82AEEA790002A2043 /* receipt.swift in Sources */,
 				5D96E1CE2AEDDD3C00720FC3 /* secPage.swift in Sources */,
 				5D96E1B92AEDD36600720FC3 /* ContentView.swift in Sources */,
 				5D96E1C32AEDD36700720FC3 /* travelpt2.xcdatamodeld in Sources */,

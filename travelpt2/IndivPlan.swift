@@ -42,7 +42,7 @@ struct IndivPlan: View {
                     Divider()
                     
                     VStack(alignment: .leading, spacing: 8){
-                        Text("Contact")
+                        Text("Name")
                             .font(.title)
                             .fontWeight(.semibold)
                         
@@ -50,7 +50,7 @@ struct IndivPlan: View {
                         Spacer()
                         
                         
-                        Text("Next Meeting")
+                        Text("Location")
                             .font(.title)
                             .fontWeight(.semibold)
                         
