@@ -42,13 +42,8 @@ struct ContentView: View {
                             .border(.black, width: CGFloat(wrongUsername))
                         Spacer()
                             .frame(height: 50.0)
-                        Button("Log In"){
-                            
-                        }
-                        .foregroundColor(.white)
-                        frame(width:300, height:50)
-                            .background(Color.blue)
-                            .cornerRadius(10)
+            
+
                         NavigationLink(destination: firstPage()) {
                             Text("Log In!")
                             .foregroundColor(Color.white)}
