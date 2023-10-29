@@ -27,7 +27,7 @@ struct Navigation: View {
                         firstPage()
                     }
                     if selectedTab == .plans {
-                        secPage()
+                        //secPage() FIX THIS THERE IS JUST AN EMPTY SECPAGE
                     }
                 }
             }
