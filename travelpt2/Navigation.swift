@@ -1,18 +1,17 @@
 //
-//  Nav.swift
+//  Navigation.swift
 //  travelpt2
 //
-//  Created by Angie Baik on 10/29/23.
+//  Created by CatherineWang on 10/29/23.
 //
-
 import SwiftUI
 
-struct Nav: View {
+struct Navigation: View {
     //Plus icon
     @State var showNewScreen: Bool = false
     
     //Switching tabs
-    @State private var selectedTab: Tab = .homePage
+    @State private var selectedTab: Tab = .house
     
     init() {
         UITableView.appearance().isHidden = true
@@ -23,11 +22,20 @@ struct Nav: View {
         ZStack {
             VStack {
                 TabView(selection: $selectedTab) {
-                    if selectedTab == .homePage {
+                    if selectedTab == .house {
+                        ContentView()
+                    }
+                    if selectedTab == .calendar {
                         firstPage()
                     }
-                    if selectedTab == .plans {
+                    if selectedTab == .plus {
                         secPage()
+                    }
+                    if selectedTab == .book {
+                        bucketList()
+                    }
+                    if selectedTab == .clipboard {
+                        IndivPlan()
                     }
                 }
             }
@@ -62,8 +70,8 @@ struct NewScreen: View {
     }
 }
 
-struct Nav_Previews: PreviewProvider {
+struct Navigation_Previews: PreviewProvider {
     static var previews: some View {
-        Nav()
+        Navigation()
     }
 }

@@ -1,16 +1,19 @@
 //
-//  navBar.swift
+//  newNavBar.swift
 //  travelpt2
 //
-//  Created by Angie Baik on 10/29/23.
+//  Created by CatherineWang on 10/29/23.
 //
 
 import SwiftUI
 
 enum Tab: String, CaseIterable {
-    case homePage
-    case plans
-    }
+    case house
+    case calendar
+    case plus
+    case book
+    case clipboard
+}
 
 struct newNavbar: View {
     
@@ -47,6 +50,6 @@ struct newNavbar: View {
 
 struct newNavbar_Previews: PreviewProvider {
     static var previews: some View {
-        newNavbar(selectedTab: .constant(.plans))
+        newNavbar(selectedTab: .constant(.plus))
     }
 }
