@@ -61,7 +61,7 @@ struct firstPage: View {
                 })
                 .padding()
                 .frame(maxWidth: .infinity)
-                .background(Color.black.cornerRadius(10))
+                .background(Color(hue: 0.697, saturation: 0.785, brightness: 0.368).cornerRadius(10))
                 .foregroundColor(.white)
                 .font(.headline)
                 //Di sables button until all fields are filled
